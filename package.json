@@ -4,6 +4,7 @@
 	"description": "**v 1.0.0** :hammer:",
 	"main": "app.js",
 	"scripts": {
+		"start": "node app.js",
 		"dev": "nodemon app.js"
 	},
 	"repository": {
