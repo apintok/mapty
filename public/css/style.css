@@ -7,6 +7,9 @@
 	--color-light--1: #aaa;
 	--color-light--2: #ececec;
 	--color-light--3: rgb(214, 222, 224);
+
+	--color-btn-delete: #D00000;
+	--color-btn-edit: #0118F4;
 }
 
 * {
@@ -217,4 +220,28 @@ a:visited {
 }
 .cycling-popup .leaflet-popup-content-wrapper {
 	border-left: 5px solid var(--color-brand--1);
+}
+
+/*Custom CSS*/
+
+.btn {
+	border: none;
+	border-radius: 5px 5px;
+	color: var(--color-light--2);
+	font-family: inherit;
+	text-transform: uppercase;
+}
+
+.btn-edit {
+	background-color: var(--color-btn-edit);
+	grid-column: 2 / 3;
+}
+
+.btn-delete {
+	background-color: var(--color-btn-delete);
+}
+
+.btn-edit,
+.btn-delete:focus {
+	outline: none;
 }
